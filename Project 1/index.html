@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mice Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Discover your preffered rat</h1>
+    <p id="description">Take this short form to share your rat appreciation :D</p>
+    <form action="POST" id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label"> Your name<input type="text" id="name" placeholder="Alberto Soares" required></label>
+            <label for="email" id="email-label"> Your Email<input type="email" name="" id="email" placeholder="youremail@gmail.com" required></label>
+            <label for="number" id="number-label"> Your Age<input type="number" name="" id="number" min="13" max="120" placeholder="Your age" ></label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">
+                <select id="dropdown">
+                    <option value="">
+                        Choose One
+                    </option>
+                    <option value="">
+                        opt1
+                    </option>
+                    <option value="">
+                        opt2
+                    </option>
+                    <option value="">
+                        opt3
+                    </option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Which is the cutest</legend>
+            <label for="black"><input type="radio" name="rat-type" id="black" value="black" required>black</label>
+            <label for="brown"><input type="radio" name="rat-type" id="brown" value="brown" required>Brown</label>
+            <label for="albino"><input type="radio" name="rat-type" id="albino" value="albino" required>Albinos</label>
+            <label for="grey"><input type="radio" name="rat-type" id="grey" value="grey" required>Grey</label>
+        </fieldset>
+        <fieldset>
+            <legend>What's Your Rat Personality?</legend>
+            <label for="loving"><input type="checkbox" id="loving" value="loving" >Loving</label>
+            <label for="amicable"><input type="checkbox" id="amicable" value="amicable" >Amicable</label>
+            <label for="furious"><input type="checkbox" id="furious" value="furious" >Furious</label>
+            <label for="lazy"><input type="checkbox" id="lazy" value="lazy" >Lazy</label>
+            <label for="polite"><input type="checkbox" id="polite" value="polite" >Polite</label>
+        </fieldset>
+        <fieldset>
+            <label for=""><textarea name="" id="" cols="30" rows="10"></textarea></label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+</html>
